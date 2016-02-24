@@ -14,6 +14,7 @@
 		B8CC4BC21C6D172600A3C2A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CC4BC01C6D172600A3C2A9 /* LaunchScreen.storyboard */; };
 		B8CC4BCD1C6D172600A3C2A9 /* SCHDiceRollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC4BCC1C6D172600A3C2A9 /* SCHDiceRollerTests.swift */; };
 		B8CC4BD81C6D172600A3C2A9 /* SCHDiceRollerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC4BD71C6D172600A3C2A9 /* SCHDiceRollerUITests.swift */; };
+		B8CC4BE61C6D1DBD00A3C2A9 /* Page2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC4BE51C6D1DBD00A3C2A9 /* Page2VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B8CC4BD31C6D172600A3C2A9 /* SCHDiceRollerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCHDiceRollerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CC4BD71C6D172600A3C2A9 /* SCHDiceRollerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCHDiceRollerUITests.swift; sourceTree = "<group>"; };
 		B8CC4BD91C6D172600A3C2A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8CC4BE51C6D1DBD00A3C2A9 /* Page2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				B8CC4BB71C6D172600A3C2A9 /* AppDelegate.swift */,
 				B8CC4BB91C6D172600A3C2A9 /* ViewController.swift */,
+				B8CC4BE51C6D1DBD00A3C2A9 /* Page2VC.swift */,
 				B8CC4BBB1C6D172600A3C2A9 /* Main.storyboard */,
 				B8CC4BBE1C6D172600A3C2A9 /* Assets.xcassets */,
 				B8CC4BC01C6D172600A3C2A9 /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8CC4BBA1C6D172600A3C2A9 /* ViewController.swift in Sources */,
+				B8CC4BE61C6D1DBD00A3C2A9 /* Page2VC.swift in Sources */,
 				B8CC4BB81C6D172600A3C2A9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
