@@ -27,7 +27,7 @@
                                 <rect key="frame" x="136" y="157" width="85" height="30"/>
                                 <state key="normal" title="Goto Page 2"/>
                                 <connections>
-                                    <segue destination="wQQ-P7-yHu" kind="show" id="wt6-6W-wAN"/>
+                                    <segue destination="wQQ-P7-yHu" kind="show" id="Niy-P9-rf0"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="teA-OO-uQk">
@@ -35,10 +35,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFO-mI-E4T">
+                                <rect key="frame" x="114" y="369" width="165" height="30"/>
+                                <state key="normal" title="Goto Page 2 Storyboard"/>
+                                <connections>
+                                    <action selector="page2ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uRZ-rk-Xe9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="theTextField" destination="teA-OO-uQk" id="0mU-LW-RVV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,7 +57,7 @@
         <!--Page2VC-->
         <scene sceneID="iiz-lu-uPC">
             <objects>
-                <viewController id="wQQ-P7-yHu" customClass="Page2VC" customModule="SCHDiceRoller" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Page2VC" id="wQQ-P7-yHu" customClass="Page2VC" customModule="SCHDiceRoller" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HFp-Ad-7Ym"/>
                         <viewControllerLayoutGuide type="bottom" id="w8D-rx-jWy"/>
@@ -72,7 +82,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYu-PL-AVM">
                                 <rect key="frame" x="59" y="107" width="243" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
