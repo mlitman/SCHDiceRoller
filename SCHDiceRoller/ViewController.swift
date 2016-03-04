@@ -16,6 +16,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func hideKeyboardButtonPressed(sender: AnyObject)
+    {
+        self.theTextField.resignFirstResponder()
+    }
+    
     @IBAction func page2ButtonPressed(sender: AnyObject)
     {
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("Page2VC") as! Page2VC
@@ -30,9 +35,16 @@ class ViewController: UIViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-        let vc = segue.destinationViewController as! Page2VC
-        //vc.theText = "I told you so!!!"
-        vc.theText = self.theTextField.text!
+        if(segue.identifier == "page2Segue")
+        {
+            let vc = segue.destinationViewController as! Page2VC
+            //vc.theText = "I told you so!!!"
+            vc.theText = self.theTextField.text!
+        }
+        else if(segue.identifier == "page3Segue")
+        {
+            SCHCore.sharedText = self.theTextField.text!
+        }
     }
 }
 

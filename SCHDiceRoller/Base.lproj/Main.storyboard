@@ -27,7 +27,7 @@
                                 <rect key="frame" x="136" y="157" width="85" height="30"/>
                                 <state key="normal" title="Goto Page 2"/>
                                 <connections>
-                                    <segue destination="wQQ-P7-yHu" kind="show" id="Niy-P9-rf0"/>
+                                    <segue destination="wQQ-P7-yHu" kind="show" identifier="page2Segue" id="Niy-P9-rf0"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="teA-OO-uQk">
@@ -39,7 +39,28 @@
                                 <rect key="frame" x="114" y="369" width="165" height="30"/>
                                 <state key="normal" title="Goto Page 2 Storyboard"/>
                                 <connections>
-                                    <action selector="page2ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uRZ-rk-Xe9"/>
+                                    <action selector="page2ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6gp-7Z-8ra"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZK-OT-vc3">
+                                <rect key="frame" x="184" y="491" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="tGa-dw-0qO" kind="show" identifier="page3Segue" id="kfw-nr-ScE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inj-x4-rMz">
+                                <rect key="frame" x="56" y="427" width="183" height="30"/>
+                                <state key="normal" title="another page 2 storyboard"/>
+                                <connections>
+                                    <action selector="page2ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hLQ-Gt-I3V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku5-Ev-7td">
+                                <rect key="frame" x="270" y="210" width="97" height="30"/>
+                                <state key="normal" title="hide keyboard"/>
+                                <connections>
+                                    <action selector="hideKeyboardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EEf-Sc-wiv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,6 +74,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="129" y="511"/>
+        </scene>
+        <!--Page3VC-->
+        <scene sceneID="qwS-IT-ZIY">
+            <objects>
+                <viewController id="tGa-dw-0qO" customClass="Page3VC" customModule="SCHDiceRoller" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hUG-xB-oNR"/>
+                        <viewControllerLayoutGuide type="bottom" id="6ix-Ri-X5u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fho-M0-mTh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8K-c6-yTb">
+                                <rect key="frame" x="190" y="110" width="34" height="30"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <action selector="genericBackButtonPressed:" destination="tGa-dw-0qO" eventType="touchUpInside" id="xve-29-Jeq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGp-V4-cYx">
+                                <rect key="frame" x="186" y="219" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="theLabel" destination="XGp-V4-cYx" id="03K-7Q-u1c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0wE-Mo-TJK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154" y="1496"/>
         </scene>
         <!--Page2VC-->
         <scene sceneID="iiz-lu-uPC">
@@ -85,6 +142,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUz-zg-obJ">
+                                <rect key="frame" x="111" y="384" width="45" height="30"/>
+                                <state key="normal" title="cancel"/>
+                                <connections>
+                                    <action selector="genericBackButtonPressed:" destination="wQQ-P7-yHu" eventType="touchUpInside" id="kOl-lb-5oI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
