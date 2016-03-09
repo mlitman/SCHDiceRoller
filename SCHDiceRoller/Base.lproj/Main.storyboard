@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,58 +18,101 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec0-hW-lwz">
-                                <rect key="frame" x="97" y="97" width="199" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec0-hW-lwz">
+                                <rect key="frame" x="108" y="33" width="199" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8W5-OF-uqy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0o-Qb-Pts">
-                                <rect key="frame" x="136" y="157" width="85" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0o-Qb-Pts">
+                                <rect key="frame" x="165" y="62" width="85" height="30"/>
                                 <state key="normal" title="Goto Page 2"/>
                                 <connections>
                                     <segue destination="wQQ-P7-yHu" kind="show" identifier="page2Segue" id="Niy-P9-rf0"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="teA-OO-uQk">
-                                <rect key="frame" x="148" y="210" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="teA-OO-uQk">
+                                <rect key="frame" x="159" y="94" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="qOt-0X-KXL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFO-mI-E4T">
-                                <rect key="frame" x="114" y="369" width="165" height="30"/>
-                                <state key="normal" title="Goto Page 2 Storyboard"/>
-                                <connections>
-                                    <action selector="page2ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6gp-7Z-8ra"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZK-OT-vc3">
-                                <rect key="frame" x="184" y="491" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="tGa-dw-0qO" kind="show" identifier="page3Segue" id="kfw-nr-ScE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inj-x4-rMz">
-                                <rect key="frame" x="56" y="427" width="183" height="30"/>
-                                <state key="normal" title="another page 2 storyboard"/>
-                                <connections>
-                                    <action selector="page2ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hLQ-Gt-I3V"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku5-Ev-7td">
-                                <rect key="frame" x="270" y="210" width="97" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pGh-uj-5YI">
+                                <rect key="frame" x="20" y="350" width="374" height="192"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFO-mI-E4T">
+                                        <rect key="frame" x="93" y="20" width="165" height="30"/>
+                                        <state key="normal" title="Goto Page 2 Storyboard"/>
+                                        <connections>
+                                            <action selector="page2ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6gp-7Z-8ra"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZK-OT-vc3">
+                                        <rect key="frame" x="163" y="142" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="tGa-dw-0qO" kind="show" identifier="page3Segue" id="kfw-nr-ScE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inj-x4-rMz">
+                                        <rect key="frame" x="35" y="78" width="183" height="30"/>
+                                        <state key="normal" title="another page 2 storyboard"/>
+                                        <connections>
+                                            <action selector="page2ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hLQ-Gt-I3V"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Inj-x4-rMz" firstAttribute="leading" secondItem="pGh-uj-5YI" secondAttribute="leading" constant="35" id="FYf-DN-f0V"/>
+                                    <constraint firstItem="3ZK-OT-vc3" firstAttribute="top" secondItem="Inj-x4-rMz" secondAttribute="bottom" constant="34" id="Ni1-Mp-5AT"/>
+                                    <constraint firstAttribute="bottom" secondItem="3ZK-OT-vc3" secondAttribute="bottom" constant="20" id="RdS-JD-Nvx"/>
+                                    <constraint firstItem="Inj-x4-rMz" firstAttribute="top" secondItem="BFO-mI-E4T" secondAttribute="bottom" constant="28" id="TY2-vC-6a6"/>
+                                    <constraint firstItem="BFO-mI-E4T" firstAttribute="leading" secondItem="pGh-uj-5YI" secondAttribute="leading" constant="93" id="Wek-cx-JOF"/>
+                                    <constraint firstAttribute="trailing" secondItem="3ZK-OT-vc3" secondAttribute="trailing" constant="165" id="bki-9I-Tgz"/>
+                                    <constraint firstItem="BFO-mI-E4T" firstAttribute="top" secondItem="pGh-uj-5YI" secondAttribute="top" constant="20" id="wkm-se-vxp"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku5-Ev-7td">
+                                <rect key="frame" x="264" y="94" width="97" height="30"/>
                                 <state key="normal" title="hide keyboard"/>
                                 <connections>
                                     <action selector="hideKeyboardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EEf-Sc-wiv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iG-JN-Wjx">
+                                <rect key="frame" x="264" y="126" width="66" height="30"/>
+                                <state key="normal" title="shift view"/>
+                                <connections>
+                                    <action selector="shiftViewButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n4I-48-y6q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ec0-hW-lwz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="6fo-3e-V1P"/>
+                            <constraint firstItem="a0o-Qb-Pts" firstAttribute="centerX" secondItem="Ec0-hW-lwz" secondAttribute="centerX" id="BEs-86-dN0"/>
+                            <constraint firstItem="pGh-uj-5YI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="M1q-Qh-biI"/>
+                            <constraint firstItem="Ec0-hW-lwz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="88" id="RfG-Ek-zLZ"/>
+                            <constraint firstItem="a0o-Qb-Pts" firstAttribute="centerX" secondItem="teA-OO-uQk" secondAttribute="centerX" id="VTB-xH-0WX"/>
+                            <constraint firstItem="ku5-Ev-7td" firstAttribute="top" secondItem="teA-OO-uQk" secondAttribute="top" id="eVh-MO-cBS"/>
+                            <constraint firstItem="a0o-Qb-Pts" firstAttribute="top" secondItem="Ec0-hW-lwz" secondAttribute="bottom" constant="8" symbolic="YES" id="hX6-sP-K3Q"/>
+                            <constraint firstItem="teA-OO-uQk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tgH-Md-s5s"/>
+                            <constraint firstItem="teA-OO-uQk" firstAttribute="top" secondItem="a0o-Qb-Pts" secondAttribute="bottom" constant="2" id="vkO-Og-QTY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pGh-uj-5YI" secondAttribute="bottom" constant="194" id="w2e-Fn-iDY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pGh-uj-5YI" secondAttribute="trailing" id="wQx-0s-YSS"/>
+                            <constraint firstItem="ku5-Ev-7td" firstAttribute="leading" secondItem="teA-OO-uQk" secondAttribute="trailing" constant="8" symbolic="YES" id="x6x-09-HnK"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="theTextField" destination="teA-OO-uQk" id="0mU-LW-RVV"/>
+                        <outlet property="viewContainer" destination="pGh-uj-5YI" id="x5S-xv-Xks"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
