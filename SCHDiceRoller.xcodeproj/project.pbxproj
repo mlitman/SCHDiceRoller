@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B818DF891CB69ADE00B22D10 /* PulseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B818DF881CB69ADE00B22D10 /* PulseButton.swift */; };
+		B818DF8B1CB69CC700B22D10 /* UIView+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = B818DF8A1CB69CC700B22D10 /* UIView+Extras.swift */; };
 		B87D4A7E1C8A1A8500ABB2AA /* UIViewController+Stuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D4A7D1C8A1A8500ABB2AA /* UIViewController+Stuff.swift */; };
 		B87D4A801C8A1C7600ABB2AA /* Page3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D4A7F1C8A1C7600ABB2AA /* Page3VC.swift */; };
 		B87D4A821C8A1E0E00ABB2AA /* SCHCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D4A811C8A1E0E00ABB2AA /* SCHCore.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B818DF881CB69ADE00B22D10 /* PulseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulseButton.swift; sourceTree = "<group>"; };
+		B818DF8A1CB69CC700B22D10 /* UIView+Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extras.swift"; sourceTree = "<group>"; };
 		B87D4A7D1C8A1A8500ABB2AA /* UIViewController+Stuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Stuff.swift"; sourceTree = "<group>"; };
 		B87D4A7F1C8A1C7600ABB2AA /* Page3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page3VC.swift; sourceTree = "<group>"; };
 		B87D4A811C8A1E0E00ABB2AA /* SCHCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCHCore.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				B87D4A7D1C8A1A8500ABB2AA /* UIViewController+Stuff.swift */,
 				B87D4A7F1C8A1C7600ABB2AA /* Page3VC.swift */,
 				B87D4A811C8A1E0E00ABB2AA /* SCHCore.swift */,
+				B818DF881CB69ADE00B22D10 /* PulseButton.swift */,
+				B818DF8A1CB69CC700B22D10 /* UIView+Extras.swift */,
 			);
 			path = SCHDiceRoller;
 			sourceTree = "<group>";
@@ -268,6 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B818DF891CB69ADE00B22D10 /* PulseButton.swift in Sources */,
+				B818DF8B1CB69CC700B22D10 /* UIView+Extras.swift in Sources */,
 				B8CC4BBA1C6D172600A3C2A9 /* ViewController.swift in Sources */,
 				B8CC4BE61C6D1DBD00A3C2A9 /* Page2VC.swift in Sources */,
 				B8CC4BB81C6D172600A3C2A9 /* AppDelegate.swift in Sources */,
